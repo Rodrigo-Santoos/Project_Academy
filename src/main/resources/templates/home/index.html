@@ -4,17 +4,45 @@
 <meta name = "viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <link rel ="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
-<title>Teste</title>
+<title>Project Academy</title>
 <meta name = "author" content="Rodrigo Oliveira"/>
+
+<!-- importando o Css -->
+<link rel="stylesheet" href="css/style.css">
+<!-- fontes -->
+<script src="https://kit.fontawesome.com/006642858d.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-	<p th:text="${MSG}"></p>
 
-	<h1>Ola mundo</h1>
+	<header>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4527A0">
+				<!--Logo site -->
+			<a class="navbar-brand" href="#">
+				<img src="img/logo_header-site.png" width="200px">
+			</a>
+				<!-- Menu hamburgue -->
+			<button class="navbar-toogler" type="button" data-toogle="collapse" data-target="#navMobile">
+				<span class="navbar-toogler-icon"></span>
+			</button>
+			
+			<div id="navMobile" class="navbar-collapse collapse justify-content-end">
+			
+				<a class="nav-item nav-link">Home</a>
+				<a class="nav-item nav-link">Cadastrar Aluno</a>
+				<a class="nav-item nav-link">Pesquisar Aluno</a>
+				<a class="nav-item nav-link btn-danger">Sair</a>
+				
+			</div>
+			
+		</nav>
+	
+	</header>
+
+	
 	<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	
-	<button class="btn btn-primary">Testando</button>
-
 </body>
 </html>
