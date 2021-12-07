@@ -1,0 +1,32 @@
+RODRIGO DO FUTURO LEIA ISSO, PODE SALVAR VOCE CASO ESTEJA NA AREA!!
+
+Antes de Tudo voce precisa importar algumas dependecias no POM.xml, vai no site e ver as versoes mais recentes
+	LINK: https://mvnrepository.com/artifact/org.webjars/webjars-locator
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator</artifactId>
+			<version>0.42</version>	
+		</dependency>
+		
+	LINK: https://mvnrepository.com/artifact/org.webjars/jquery
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+		
+	LINK: https://mvnrepository.com/artifact/org.webjars/bootstrap
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.1.3</version>
+		</dependency>
+
+feito isso no html adiciona o link do bootstrap
+	<link rel ="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+
+Adiciona tambem script dentro do body do html, mas lembre-se de atualizar para versao mais recente no caminho, 
+por exemplo o webjars esta na versao 3.6.0
+
+	<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script> 

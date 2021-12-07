@@ -6,7 +6,6 @@
 <link rel ="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 <title>Project Academy</title>
 <meta name = "author" content="Rodrigo Oliveira"/>
-
 <!-- importando o Css -->
 <link rel="stylesheet" href="css/style.css">
 <!-- fontes -->
@@ -16,15 +15,14 @@
 <body>
 
 	<header>
-		
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4527A0">
 				<!--Logo site -->
 			<a class="navbar-brand" href="#">
 				<img src="img/logo_header-site.png" width="200px">
 			</a>
 				<!-- Menu hamburgue -->
-			<button class="navbar-toogler" type="button" data-toogle="collapse" data-target="#navMobile">
-				<span class="navbar-toogler-icon"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			
 			<div id="navMobile" class="navbar-collapse collapse justify-content-end">
@@ -37,9 +35,47 @@
 			</div>
 			
 		</nav>
-	
 	</header>
 
+         <!-- Seçao e a imagem de fundo da pagina-->
+	<section class="neo-section" style="background-image: url('img/bg-index.jpg');">
+	
+		<!--Sombra por cima de imagem -->
+		<div class="sombra"></div>
+		
+			<!--Texto -->
+		<div class="center neo-container">
+			<h1 class="texto-centro">Sistema de Gerenciamento de Alunos</h1>
+		
+		
+		<!--Cor dos botoes -->
+		<div class="botoes">
+			
+		<!--Botao 1 -->
+		<div class="wm">
+			<h5 class="btn">Cadastrar Aluno</h5>
+		</div>
+		
+		<!--Botao 2 -->
+		<div class="wm">
+			<h5 class="btn justify-content-center">Encontrar Aluno</h5>
+		</div>
+		
+		<!--Centralizando os botoes -->
+		<div class="clear"></div>
+		
+		</div>
+		
+		</div>
+	
+	</section>
+	
+		<!--rodapé -->
+		<footer>
+			<div class="rodape">
+				<span>Todos os direito - 2021 &copy; Rodrigo de Oliveira dos Santos</span>
+			</div>
+		</footer>
 	
 	<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
