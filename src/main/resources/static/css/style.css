@@ -21,9 +21,9 @@ a{
 	font-weight: bold;
 }
 
-/* Configurando a imagem de fundo da pagina */
+/* Configuraçao da imagem de fundo da pagina */
 .neo-section{
-	min-height: 700px;
+	min-height: 800px;
 	background-size: cover !important;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -32,26 +32,31 @@ a{
 	position: relative;
 }
 
+/* configuraçao dos botoes */
 .wm{
 	width: 50%;
 	float: left;
 }
 
+/* configuraçao do texto Sistema de Gerenciamento de Alunos*/
 .neo-container{
 	max-width: 1280px;
 	padding: 2% 2%;
 	margin: 0 auto;
-	margin-top: 200px;
+ 	margin-top: 200px;  /*decendo os botoes e o texto */
 }
 
+/* limpando o ponto flutuante, mas se tira ainda vai funcionar */
 .clear{
 	clear: both;
 }
 
+/* colocando os botoes e o texto no centro da pagina */
 .center{
 	text-align: center;
 }
 
+/* configurando a sombra por cima da imagem de fundo */
 .sombra{
 	width: 100%;
 	height: 100%;
@@ -62,11 +67,13 @@ a{
 	z-index: 100;
 }
 
+/* essa seçao fica em cima da sombra, se a nao colocar a sombra fica em cima e nao da para mexer */
 .neo-section > .neo-container{
 	position: relative;
 	z-index: 105;
 }
 
+/* configurando o texto do centro */
 .texto-centro{
 	color: #fff;
 	font-size: 3em;
@@ -84,10 +91,12 @@ a{
 	font-weight: bold;
 }
 
+/* Juntandos os botoes para fica no centro */
 .botoes{
 	padding: 2% 15%;
 }
 
+/* mudando a cor quando passar o mouse */
 .btn:hover{
 	color: #C2185B;
 	background-color: rgba(0,0,0,0.5);
