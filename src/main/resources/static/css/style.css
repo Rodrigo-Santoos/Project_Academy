@@ -4,21 +4,21 @@
 	padding: 0; 
 	box-sizing: border-box;
 }
-/* Colocando a cor branca nas palavras: (Home */
-/* Cadastrar Aluno */
-/* Pesquisar Aluno */
-/* Sair) no menu  */
-.nav-link{
-	color: #fff
-}
+/* Colocando a cor branca nas palavras*/
 
 nav {
+	color: #fff;
 	height: 90px; 
+	text-transform: uppercase;
 }
 
 a{
 	cursor: pointer; 
 	font-weight: bold;
+}
+
+a.btn-nav:hover{
+	color: #BA68C8;
 }
 
 /* Configuraçao da imagem de fundo da pagina */
@@ -109,4 +109,19 @@ a{
 	text-align: center;
 	font-size: 1.25em;
 	padding: 15px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 667px){
+	.wm{
+		width: 100%;
+	}
+	
+	nav{
+		height: 100%;
+	}
+	
+	.neo-container{
+		margin-top: 120px;
+	}
 }
