@@ -7,6 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
+//	Metodo que retorna a view index
 	@GetMapping("/")
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView();

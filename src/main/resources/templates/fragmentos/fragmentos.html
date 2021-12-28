@@ -14,11 +14,19 @@
 </head>
 <body>
 
-	<header>
+<!-- Header tirado de index.html esta aqui, pois queremos ele em todas as paginas -->
+
+	<!-- cabeçalho -->
+	<header th:fragment="cabecalho">
 				<!--Criando navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4527A0">
+				
+<!-- 				clicando no logo para poder voltar a pagina principal 
+<!-- 				usamos th:href="@{/}"
+<!-- 				 @ --- link 
+<!-- 				{/} --- o que esta no nosso Getmapping  -->
+			<a class="navbar-brand" th:href="@{/}">
 				<!--Logo site -->
-			<a class="navbar-brand" href="#">
 				<img src="img/logo_header-site.png" width="200px">
 			</a>
 				<!-- Menu hamburgue -->
@@ -37,6 +45,14 @@
 			
 		</nav>
 	</header>
+	
+<!-- 	Aqui esta o footer tirado de index.html -->
+			<!--rodapé -->
+		<footer th:fragment="rodape">
+			<div class="rodape">
+				<span>Todos os direito - 2021 &copy; Rodrigo de Oliveira dos Santos</span>
+			</div>
+		</footer>
 
 
 		<!--importando Jquery -->

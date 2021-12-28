@@ -14,11 +14,10 @@
 </head>
 <body>
 
-
-<!-- 	O header esta no arquivo fragmentos.html pois queremos usar ele em todas as paginas, esta comentando pois -->
-<!-- 	nao precisamos dele aqui mas caso queira esta aqui mas nao precisamos dele -->
-
 <!-- ----------------------------------------------------------------------------------------------------------------------------	 -->
+<!-- O header esta no arquivo src/main/resources/templates/framentos/fragmentos.html 
+	pois queremos usar ele em todas as paginas, esta comentando pois 
+	nao precisamos dele aqui mas caso queira esta aqui mas nao precisamos dele -->
 
 <!-- 	<header> -->
 <!-- 				Criando navbar -->
@@ -43,14 +42,18 @@
 			
 <!-- 		</nav> -->
 <!-- 	</header> -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------	 -->
 
+<!-- Pegando o cabecalho(header) que esta no fragmentos.html -->
+	<div th:replace="fragmentos/fragmentos :: cabecalho"></div>
+	
          <!-- Seçao e a imagem de fundo da pagina-->
 	<section class="neo-section" style="background-image: url('img/bg-index.jpg');">
 	
 		<!--classe Sombra, para colocar em cima de imagem -->
 		<div class="sombra"></div>
 		
-			<!--Texto -->
+		<!--Texto -->
 		<div class="center neo-container">
 			<h1 class="texto-centro">Sistema de Gerenciamento de Alunos</h1>
 		
@@ -77,13 +80,21 @@
 	
 	</section>
 	
-		<!--rodapé -->
-		<footer>
-			<div class="rodape">
-				<span>Todos os direito - 2021 &copy; Rodrigo de Oliveira dos Santos</span>
-			</div>
-		</footer>
+<!-- 	Pegando o rodape (footer) que esta no fragmentos.html  -->
+	<div th:replace="fragmentos/fragmentos :: rodape"></div>
 	
+	
+<!-- ----------------------------------------------------------------------------------------------------------------------------	 -->
+
+<!-- 	o footer tambem esta no fragmentos.html pois tambem queremos que ele apareca em todas as paginas	 -->
+
+<!-- 		<!--rodapé -->
+<!-- 		<footer> -->
+<!-- 			<div class="rodape"> -->
+<!-- 				<span>Todos os direito - 2021 &copy; Rodrigo de Oliveira dos Santos</span> -->
+<!-- 			</div> -->
+<!-- 		</footer> -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------	 -->	
 		<!--importando Jquery -->
 	<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
