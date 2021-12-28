@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<link rel ="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+<title>Project Academy</title>
+<meta name = "author" content="Rodrigo Oliveira"/>
+<!-- importando o Css -->
+<link rel="stylesheet" href="css/style.css">
+<!-- fontes -->
+<script src="https://kit.fontawesome.com/006642858d.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+				<!--Criando navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4527A0">
+				<!--Logo site -->
+			<a class="navbar-brand" href="#">
+				<img src="img/logo_header-site.png" width="200px">
+			</a>
+				<!-- Menu hamburgue -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div id="navMobile" class="navbar-collapse justify-content-end collapse">
+		
+				<a class="btn-nav nav-item nav-link"><i class="fas fa-home"></i> Home</a>
+				<a class="btn-nav nav-item nav-link"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
+				<a class="btn-nav nav-item nav-link"><i class="fas fa-search"></i> Pesquisar Aluno</a>
+				<a class="btn-nav nav-item nav-link btn-danger"><i class="fas fa-times"></i> Sair</a>
+				
+			</div>
+			
+		</nav>
+	</header>
+
+
+		<!--importando Jquery -->
+	<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	
+</body>
+</html>

@@ -12,11 +12,13 @@ nav {
 	text-transform: uppercase;
 }
 
+/* configurando para colocar o curso de aperta nas palavras no menu de hamburgue */
 a{
 	cursor: pointer; 
 	font-weight: bold;
 }
 
+/* colocando cor nas palavras no menu de hamburgue */
 a.btn-nav:hover{
 	color: #BA68C8;
 }
