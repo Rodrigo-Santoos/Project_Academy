@@ -23,7 +23,7 @@
 				
 <!-- 				clicando no logo para poder voltar a pagina principal 
 <!-- 				usamos th:href="@{/}"
-<!-- 				 @ --- link 
+<!-- 				 @ -- link 
 <!-- 				{/} --- o que esta no nosso Getmapping  -->
 			<a class="navbar-brand" th:href="@{/}">
 				<!--Logo site -->
@@ -37,7 +37,7 @@
 			<div id="navMobile" class="navbar-collapse justify-content-end collapse">
 		
 				<a class="btn-nav nav-item nav-link"><i class="fas fa-home"></i> Home</a>
-				<a class="btn-nav nav-item nav-link"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
+				<a class="btn-nav nav-item nav-link" th:href="@{Aluno/inserirAlunos}"><i class="fas fa-user-graduate"></i> Cadastrar Aluno</a>
 				<a class="btn-nav nav-item nav-link"><i class="fas fa-search"></i> Pesquisar Aluno</a>
 				<a class="btn-nav nav-item nav-link btn-danger"><i class="fas fa-times"></i> Sair</a>
 				
