@@ -12,6 +12,8 @@ import br.com.academy.Enums.Status;
 @Entity
 public class Aluno {
 	
+//	@Column(name="")--> o hybernate esta criando as colunas automaticamente no banco quando digitamos isso
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
