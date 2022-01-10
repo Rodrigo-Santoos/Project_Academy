@@ -93,6 +93,14 @@ a.btn-nav:hover{
 	font-weight: bold;
 }
 
+.btnMatricula{
+	width: 100px;
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	font-weight: bold;
+}
+
 /* Juntandos os botoes para fica no centro */
 .botoes{
 	padding: 2% 15%;

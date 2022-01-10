@@ -22,16 +22,50 @@
 		<h4> + Inserindo Aluno</h4>
 		<hr>
 		
+			<!--inserindo alunos com metodo POST  -->
 		<form method="post" action="/insertAlunos" th:object="${aluno}">
-			
-			<div></div>
-			
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+			<!--Castrando Nome -->
+			<div class="row">
+				<div class="col-md-6 form-group offset-md-3" >
+				<label>Nome do Aluno: </label>
+				
+			<!--Exemplo de como digitar| th:field="*{nome} esta recebendo o valor digitado, dentro da chaves o {nome}
+			é o mesmo nome do atributo que colocou na classe, nesse caso esta no br.com.academy.model/Aluno -->
+				<input class="form-control" placeholder="Ex: Rodrigo Oliveira" th:field="*{nome}">
+				</div>
+			</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+			<!--Selecionando Curso -->
+			<div class="row">
+				<div class="col-md-6 form-group offset-md-3" >
+				<label>Selecione o Curso: </label>
+				<select class="form-control">
+				
+			<!--Lista de curso -->
+				<option th:each="curso : ${T(br.com.academy.Enums.Curso).values()}" th:value="${curso}"
+				th:text="${curso}"
+				></option>
+				</select>
+				</div>
+			</div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+					<!--Gerando Matricula -->
+			<div class="row">
+				<div class="col-md-6 form-group offset-md-3" >
+				<label>Gerar Matricula: </label>
+					<input class="form-control" id="matricula" th:field="*{matricula}">
+					<button type="button" onclick="gerarMatricula()" class="btnMatricula btn-dark" style="margin-top: 10px">Gerar</button>
+					
+				</div>
+			</div>
 		</form>
-		
 	</div>
 
-<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
-<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+		<!--impontado o Javascript  -->
+	<script src="js/main.js"></script>
+	<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	
 </body>
 </html>
