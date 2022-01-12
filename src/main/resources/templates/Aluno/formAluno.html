@@ -21,9 +21,10 @@
 		
 		<h4> + Inserindo Aluno</h4>
 		<hr>
+		<br>
 		
 			<!--inserindo alunos com metodo POST  -->
-		<form method="post" action="/insertAlunos" th:object="${aluno}">
+		<form method="post" action="/InsertAlunos" th:object="${aluno}">
 <!------------------------------------------------------------------------------------------------------------------------------------------------>
 			<!--Castrando Nome -->
 			<div class="row">
@@ -36,11 +37,11 @@
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------------------------------------------------>
-			<!--Selecionando Curso -->
+			<!--Curso -->
 			<div class="row">
 				<div class="col-md-6 form-group offset-md-3" >
 				<label>Selecione o Curso: </label>
-				<select class="form-control">
+				<select class="form-control" th:field="*{curso}">
 				
 			<!--Lista de curso -->
 				<option th:each="curso : ${T(br.com.academy.Enums.Curso).values()}" th:value="${curso}"
@@ -50,21 +51,58 @@
 				</div>
 			</div>
 <!------------------------------------------------------------------------------------------------------------------------------------------------>
-					<!--Gerando Matricula -->
+					<!--Matricula -->
 			<div class="row">
 				<div class="col-md-6 form-group offset-md-3" >
-				<label>Gerar Matricula: </label>
+				<label>Gerar Matricula:</label>
 					<input class="form-control" id="matricula" th:field="*{matricula}">
-					<button type="button" onclick="gerarMatricula()" class="btnMatricula btn-dark" 
+					<button type="button" onclick="gerarMatricula()" class="btnMatri btn-dark" 
 					style="margin-top: 10px">Gerar</button>
 					
 				</div>
 			</div>
+			
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+					<!--Status-->
+			<div class="row">
+				<div class="col-md-6 form-group offset-md-3">
+					<label>Selecione Status:</label> 
+					<select class="form-control" th:field="*{status}">
+
+						<!--Lista de curso -->
+						<option
+							th:each="status : ${T(br.com.academy.Enums.Status).values()}"
+							th:value="${status}" th:text="${status}"></option>
+					</select>
+				</div>
+			</div>
+			
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+					<!--Turno-->
+			<div class="row">
+				<div class="col-md-6 form-group offset-md-3">
+					<label>Turno: </label>
+					<input class="form-control" placeholder="Ex: Noite" th:field="*{turno}">
+				</div>
+			</div>
+			
+			
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+					<!--Botao de Salvar Dados-->
+					
+			<div class="row" style=text-align:center>
+				<button type="submit" class="btnSal btn-success offset-md-5">Salvar</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="btnVol btn-danger">Cancelar</a>
+			</div>
+			
+
 		</form>
 	</div>
 
 		<!--impontado o Javascript  -->
 	<script src="js/main.js"></script>
+	
 	<script src="/webjars/jquery/3.6.0/jquery.min.js"></script>
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 	
