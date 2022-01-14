@@ -15,6 +15,7 @@ import br.com.academy.Enums.Status;
 public class Aluno {
 	
 //	@Column(name="")--> o hybernate esta criando as colunas automaticamente no banco quando digitamos isso
+//  @Enumerated(EnumType.STRING) --> esta dizendo que quando adicionado ao banco vai converter para sting
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
